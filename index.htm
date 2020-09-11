@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 Assignment</title>
+</head>
+<body>
+    <h1>Javascript Day4 Assignment</h1>
+    <h2>Question1</h2>
+        <div>
+            <img src="./images/images1.jpg" id="imageid" style="width: 500px; height: 500px;" />
+                     <button onclick="button1()">Image1</button>
+                      <button onclick="button2()">Image2</button>
+                       <button onclick="button3()">Image3</button>
+        </div>
+        <script>
+const array = [{
+    image1 : "./images/images1.jpg",
+    image2 : "./images/2_baby.jpg",
+    image3 : "./images/3 baby.jpg"
+}];
+
+const imagetag = document.getElementById('imageid');
+
+function button1(){
+   imagetag.src=`${array.image1}`;
+   imagetag.alt="baby1";
+
+}
+
+function button2(){
+    imagetag.src=`${array.image2}`;
+    imagetag.alt="baby2";
+}
+
+function button3(){
+    imagetag.src=`${array.image3}`;
+    imagetag.alt="baby3";
+}
+</script>
+</body>
+</html>

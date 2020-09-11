@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Question4</h2>
+        <button id="button1">Age lessthan 30</button>
+        <button id="button2">country india</button>
+
+<script>
+    
+const All = [{
+    name: "srinivas",
+    age: 22,
+    country: "India",
+    hobbies: ["reading","coding","playing"]
+},
+{
+    name: "Reddy",
+    age: 21,
+    country: "Andhra pradesh",
+    hobbies: ["dancing","singing","eating"]
+},
+{
+    name: "lalith",
+    age: 23,
+    country: "Rajahmundry",
+    hobbies:["cooking","painting","playing"]
+}]
+console.log("array of objects");
+console.log(All);
+
+    
+            
+document.getElementById('button1').addEventListener('click',function(event){
+    
+    console.log(All.age<30);
+})
+
+document.getElementById('button2').addEventListener('click',function(event){
+    
+    console.log(All.country=="India");
+    })
+</script>
+</body>
+</html>

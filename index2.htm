@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Question2</h2>
+        <div>
+            <form>
+                <input type='text' id='inputId1' value='' required/>
+                <input type='text' id='inputId2' value=''/>
+                <button id="submit">submit</button>
+            </form>
+            
+        </div>
+        <script>
+
+
+const input1 = document.getElementById('inputId1');
+const input2 = document.getElementById('inputId2');
+
+
+document.getElementById("submit").addEventListener("click", function(event){
+    inputId2.value = inputId1.value;
+    event.preventDefault()
+  });
+</script>
+    
+</body>
+</html>
